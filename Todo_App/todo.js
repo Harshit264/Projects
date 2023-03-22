@@ -1,3 +1,6 @@
+const express = require("express")
+const app = express()
+
 //Using MVC architecture
 /*
 M = MODEL
@@ -65,3 +68,7 @@ function deleteTodo(event){
     removeTodo(idToDelete)
     render()
 }
+
+app.listen(5000, () => {
+    console.log("The server is listening...")
+})

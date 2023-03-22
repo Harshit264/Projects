@@ -1,3 +1,6 @@
+const express = require("express")
+const app = express()
+
 let cards = []
 let hasBlackJack = false
 let sum = 0
@@ -59,3 +62,7 @@ function newCard(){
         renderGame()
     }
 }
+
+app.listen(5000, () => {
+    console.log("The server is listening...")
+})
