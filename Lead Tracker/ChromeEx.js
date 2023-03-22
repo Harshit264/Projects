@@ -1,3 +1,6 @@
+const express = require("express")
+const app = express()
+
 let myLeads = []
 const localStorageLeads = JSON.parse(localStorage.getItem("myLeads"))
 const inputEl = document.getElementById("input-el")
@@ -35,4 +38,8 @@ deleteBtn.addEventListener("dblclick", function(){
     localStorage.clear()
     myLeads = []
     render(myLeads)
+})
+
+app.listen(5000, () => {
+    console.log("The server is listening...")
 })

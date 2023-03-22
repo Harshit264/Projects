@@ -1,3 +1,6 @@
+const express = require("express")
+const app = express()
+
 const input = document.getElementById("input")
 
 const btn1 = document.getElementById("btn1")
@@ -135,4 +138,8 @@ btnEqual.addEventListener("click", function(){
         numbers[1].number = "" 
     } 
     input.textContent = numbers[0].number
+})
+
+app.listen(5000, () => {
+    console.log("The server is listening...")
 })
