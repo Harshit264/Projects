@@ -1,0 +1,23 @@
+.Calc-body{
+    text-align: center;
+    margin-top: 3%;
+}
+#input{
+    width: 300px;
+    height: 55px;
+    padding: 2px;
+    font-size: 36px;
+    border: 2px solid black;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+.btns{
+    display: grid;
+    grid-template: 75px 75px 75px 75px 75px / 75px 75px 75px 75px;
+}
+.input-btn{
+    font-size: 36px;
+}
+#btnEqual{
+    width: 300px;
+}

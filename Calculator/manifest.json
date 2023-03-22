@@ -1,0 +1,9 @@
+{
+    "name": "Calculator",
+    "version": "1.0",
+    "description": "This is a calculator app for daily use.",
+    "manifest_version": 3,
+    "action": {
+        "default_popup": "Calculator.html"
+    }
+}
