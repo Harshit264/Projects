@@ -22,4 +22,4 @@ function setSignBtn(btn, visible, data){
     })
 }
 
-modulea.exports = { setBtn, setSignBtn }
+modules.exports = { setBtn, setSignBtn }
