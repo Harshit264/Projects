@@ -1,7 +1,4 @@
-const { setBtn, setSignBtn} = require("./functions")
-
 const input = document.getElementById("input")
-
 const btn1 = document.getElementById("btn1")
 const btn2 = document.getElementById("btn2")
 const btn3 = document.getElementById("btn3")
@@ -78,3 +75,28 @@ btnEqual.addEventListener("click", function(){
     } 
     input.textContent = numbers[0].number
 })
+
+//Functions used above
+function btnfunc(visible, data){
+    input.textContent += visible
+    numbers[value].number += data
+}
+function signfunc(visible, data){
+    if (value === 0){
+        value = value + 1
+    } else {
+        value = 1
+    }
+    sign = visible
+    input.textContent += data
+}
+function setBtn(btn, visible, data){
+    btn.addEventListener("click", function(){
+        btnfunc(visible, data)
+    })
+}
+function setSignBtn(btn, visible, data){
+    btn.addEventListener("click", function(){
+        signfunc(visible, data)
+    })
+}
