@@ -9,14 +9,12 @@ const btn8 = document.getElementById("btn8")
 const btn9 = document.getElementById("btn9")
 const btn0 = document.getElementById("btn0")
 const btnPoint = document.getElementById("btnPoint")
-
 const btnPlus = document.getElementById("btn+")
 const btnSubtract = document.getElementById("btn-")
 const btnMultiply = document.getElementById("btn*")
 const btnDivide = document.getElementById("btn/")
 const btnClear = document.getElementById("btnC")
 const btnEqual = document.getElementById("btnEqual")
-
 //This is the data
 let numbers = [    
     {
@@ -26,10 +24,8 @@ let numbers = [
         number: ""
     }
 ]
-
 let value = 0   
 let sign = ""
-
 //setting fucntion of buttons
 setBtn(btn1, 1, "1")
 setBtn(btn2, 2, "2")
@@ -42,12 +38,10 @@ setBtn(btn8, 8, "8")
 setBtn(btn9, 9 ,"9")
 setBtn(btn0, 0, "0")
 setBtn(btnPoint, ".", ".")
-
 setSignBtn(btnPlus, "+", "+")
 setSignBtn(btnSubtract, "-", "-")
 setSignBtn(btnMultiply, "*", "*")
 setSignBtn(btnDivide, "/", "/")
-
 //Clears everything
 btnClear.addEventListener("click", function(){
     input.textContent = ""
@@ -55,7 +49,6 @@ btnClear.addEventListener("click", function(){
     numbers[1].number = ""
     value = 0
 })
-
 //Convert the string value to numerical value and performs the calculations
 btnEqual.addEventListener("click", function(){
     numbers[0].number = Number(numbers[0].number)
@@ -75,7 +68,6 @@ btnEqual.addEventListener("click", function(){
     } 
     input.textContent = numbers[0].number
 })
-
 //Functions used above
 function btnfunc(visible, data){
     input.textContent += visible
