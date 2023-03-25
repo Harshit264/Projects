@@ -33,88 +33,40 @@ let numbers = [
 let value = 0   
 let sign = ""
 
-btn1.addEventListener("click", function(){
-    input.textContent += 1
-    numbers[value].number += "1"
-})
-btn2.addEventListener("click", function(){
-    input.textContent += 2
-    numbers[value].number += "2"
-})
-btn3.addEventListener("click", function(){
-    input.textContent += 3
-    numbers[value].number += "3"
-})
-btn4.addEventListener("click", function(){
-    input.textContent += 4
-    numbers[value].number += "4"
-})
-btn5.addEventListener("click", function(){
-    input.textContent += 5
-    numbers[value].number += "5"
-})
-btn6.addEventListener("click", function(){
-    input.textContent += 6
-    numbers[value].number += "6"
-})
-btn7.addEventListener("click", function(){
-    input.textContent += 7
-    numbers[value].number += "7"
-})
-btn8.addEventListener("click", function(){
-    input.textContent += 8
-    numbers[value].number += "8"
-})
-btn9.addEventListener("click", function(){
-    input.textContent += 9
-    numbers[value].number += "9"
-})
-btn0.addEventListener("click", function(){
-    input.textContent += 0
-    numbers[value].number += "0"
-})
-btnPoint.addEventListener("click", function(){
-    input.textContent += "."
-    numbers[value].number += "."
-})
+function btnfunction(name, value1, value2){
+    name.addEventListener("click", function(){
+        input.textContent += value1
+        numbers[value].number += value2
+    })
+}
+btnfunction(btn1, 1, "1")
+btnfunction(btn2, 2, "2")
+btnfunction(btn3, 3, "3")
+btnfunction(btn4, 4, "4")
+btnfunction(btn5, 5, "5")
+btnfunction(btn6, 6, "6")
+btnfunction(btn7, 7, "7")
+btnfunction(btn8, 8, "8")
+btnfunction(btn9, 9, "9")
+btnfunction(btn0, 0, "0")
+btnfunction(btnPoint, ".", ".")
 
+function signfunction(name, sign1, sign2){
+    name.addEventListener("click", function(){
+        if (value === 0){
+            value = value + 1
+        } else {
+            value = 1
+        }
+        sign = sign1
+        input.textContent += sign2    
+    })
+}
+signfunction(btnPlus, "+", "+")
+signfunction(btnSubtract, "-", "-")
+signfunction(btnMultiply, "*", "*")
+signfunction(btnDivide, "/", "/")
 
-btnPlus.addEventListener("click", function(){
-    if (value === 0){
-        value = value + 1
-    } else {
-        value = 1
-    }
-    sign = "+"
-    input.textContent += "+"
-})
-btnSubtract.addEventListener("click", function(){
-    if (value === 0){
-        value = value + 1
-    } else {
-        value = 1
-    }
-    sign = "-"
-    input.textContent += "-"
-})
-btnMultiply.addEventListener("click", function(){
-    if (value === 0){
-        value = value + 1
-    } else {
-        value = 1
-    }
-    sign = "*"
-    input.textContent += "*"
-})
-btnDivide.addEventListener("click", function(){
-    if (value === 0){
-        value = value + 1
-    } else {
-        value = 1
-    }
-    sign = "/"
-    input.textContent += "/"
-})
 btnClear.addEventListener("click", function(){
     input.textContent = ""
     numbers[0].number = ""
