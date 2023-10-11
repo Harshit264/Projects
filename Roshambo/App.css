@@ -1,0 +1,113 @@
+body{
+    
+    background-color: rgb(2, 100, 2);
+    
+    #startScreen{
+        text-align: center;
+        padding: 5em;
+
+        #title{
+            color: goldenrod;
+            font-size: 72px;
+            text-shadow: 0.1em 0.1em black;
+        }
+
+        #score{
+            color: goldenrod;
+            font-size: 36px;
+            text-shadow: 0.1em 0.1em black;
+        }
+
+        #startBtn{
+            height: 2em;
+            width: 4em;
+            background-color: goldenrod;
+            border-radius: 1em 1em 1em 1em;
+            font-size: 36px;
+            color: white;
+        }
+    }
+    
+    #game{
+        
+        display: none;
+
+        #backBtn{
+            background-color: rgb(2, 100, 2);
+            border: 0;
+            font-size: 36px;
+            color: goldenrod;
+            position: fixed;
+            top: 5%;
+            left: 5%;
+        }
+
+        #winner{
+            text-align: center;
+            color: goldenrod;
+            font-size: 42px;
+            text-shadow: 0.1em 0.1em black;
+        }
+
+        #gamescore{
+            text-align: center;
+            color: goldenrod;
+            font-size: 36px;
+            text-shadow: 0.1em 0.1em black;
+        }
+
+        #player{
+            position: absolute;
+            bottom: 10%;
+            left: 10%;
+            width: 40%;
+
+            #info{
+                color: goldenrod;
+                font-size: 42px;
+                text-shadow: 0.1em 0.1em black;
+            }
+            
+            #rock{
+                height: 3em;
+                width: 6em; 
+                background-color: goldenrod;
+                color: white;
+                font-size: 24px;
+                margin: 3%;
+                border-radius: 1em 1em 1em 1em;                   
+            }
+            #paper{
+                height: 3em;
+                width: 6em; 
+                background-color: goldenrod;
+                color: white;
+                font-size: 24px;
+                margin: 3%;
+                border-radius: 1em 1em 1em 1em;               
+            }
+            #scissors{
+                height: 3em;
+                width: 6em; 
+                background-color: goldenrod;
+                color: white;
+                font-size: 24px;
+                margin: 3%;
+                border-radius: 1em 1em 1em 1em;               
+            }
+        }
+
+        #computer{
+            position: absolute;
+            bottom: 10%;
+            right: 10%;
+            width: 30%;
+            
+            #move{
+                color: goldenrod;
+                font-size: 42px;
+                text-shadow: 0.1em 0.1em black;
+            }
+        }
+    }
+}
