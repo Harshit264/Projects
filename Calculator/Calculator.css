@@ -1,23 +1,44 @@
+:root{
+    --backcolor: rgba( 14.12%, 14.51% , 16.47%, 1);
+    --lightbackcolor:  rgba( 14.12%, 14.51% , 16.47%, 0.5);
+}
+
+*{
+    color: white;
+}
+
 .Calc-body{
     text-align: center;
     margin-top: 3%;
 }
+
 #input{
-    width: 300px;
+    width:  292px;
     height: 55px;
     padding: 2px;
     font-size: 36px;
-    border: 2px solid black;
+    border: 2px solid aqua;
+    background-color: #24252A;
     overflow-x: auto;
     overflow-y: hidden;
 }
+
 .btns{
     display: grid;
-    grid-template: 75px 75px 75px 75px 75px / 75px 75px 75px 75px;
+    grid-template: repeat(5, 75px) / repeat(4, 75px);
 }
+
 .input-btn{
     font-size: 36px;
+    background-color: var(--backcolor);
+    transition: all 0.5s ease 0s;
 }
+
+.input-btn:hover{
+    background-color: var(--lightbackcolor);
+    color: aqua;
+}
+
 #btnEqual{
     width: 300px;
 }
