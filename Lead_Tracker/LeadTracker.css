@@ -1,0 +1,73 @@
+:root{
+    --backcolor: rgba( 14.12%, 14.51% , 16.47%, 1);
+}
+
+body{
+    margin: 0;
+    padding: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    min-width: 400px;
+    background-color: var(--backcolor);
+}
+
+input{
+    height: 50px;
+    color: white;
+    width: 100%;
+    border: 2px solid aqua;
+    border-radius: 1rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    background-color: var(--backcolor);
+    font-size: 1.5rem;
+}
+
+#input-btn{
+    transition: all 0.3s ease 0s;
+    color: aqua;
+    height: 50px;
+    width: 100px;
+    border: 2px solid aqua;
+    border-radius: 1rem;
+    padding: 2px;
+    background-color: var(--backcolor);
+}
+
+#input-btn:hover{
+    background-color: aqua;
+    color: var(--backcolor);
+}
+
+#delete-btn{
+    transition: all 0.3s ease 0s;
+    color: aqua;
+    height: 50px;
+    width: 100px;
+    border: 2px solid aqua;
+    border-radius: 1rem;
+    padding: 2px;
+    background-color: var(--backcolor);
+}
+
+#delete-btn:hover{
+    background-color: aqua;
+    color: var(--backcolor);
+}
+
+ul{
+    margin-top: 1.25rem;
+    padding-left: 0;
+    font-size: 1.5rem;
+}
+
+li{
+    list-style: none;
+    padding: 5px;
+}
+
+li a{
+    color: aqua;
+}
