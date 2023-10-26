@@ -1,51 +1,72 @@
-body{
-    background-color: #A2A3BB;
-    color: black;
+:root{
+    --backcolor: rgba( 14.12%, 14.51% , 16.47%, 1);
+    --lightbackcolor:  rgba( 14.12%, 14.51% , 16.47%, 0.5);
 }
-.header{
-    display: block;
-    border-bottom: 2px solid black;
-    height: 80px;
-    text-align: center;
-    color: black;
-}
-#head{
-    margin: 0;
+
+*{
+    box-sizing: border-box;
+    background-color: var(--backcolor);
     padding: 0;
-    position: absolute;
-    left: 5%;
-    top: 5%; 
-    font-size: 28px;
-    color: black;
+    margin: 0;
+    color: white;
 }
+
+header{
+    border-bottom: 2px solid aqua;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#head{
+    color: aqua;
+}
+
 #make{
-    position: absolute;
-    right: 5%;
-    top: 5%;
-    height: 25px;
-    width: 100px;
-    border: 0;
-    border-radius: 50px 50px 50px 50px;
-    color: black;
+    font-size: 1rem;
+    height: 2.5rem;
+    width: 6.5rem;
+    padding: 0.2rem;
+    color: aqua;
+    border: 2px solid aqua;
+    border-radius: 2rem;
+    transition: all 0.3s ease 0s;
 }
+
+#make:hover{
+    color: var(--backcolor);
+    background-color: aqua;
+}
+
+.text{
+    text-align: center;
+}
+
 #dataEl{
-    position: absolute;
-    left: 5%;
-    top: 20%;
-    height: 40%;
+    height: 2rem;
     width: 90%;
-    color: black;
+    font-size: 1.5rem;
 }
+
 #note{
-    position: absolute;
-    left: 5%;
-    top: 70%;
-    color: black;
+    margin: 2rem;
+    border: 1px solid aqua;
+    padding: 1.5rem;
 }
+
+#noteData{
+    font-size: 1rem;
+    margin: 1rem;
+}
+
 #deleteBtn{
-    height: 25px;
-    width: 100px;
-    border: 0;
-    border-radius: 50px 50px 50px 50px;
-    color: black;
+    font-size: 0.8rem;
+    height: 2rem;
+    width: 6rem;
+    padding: 0.2rem;
+    color: aqua;
+    border: 2px solid aqua;
+    border-radius: 2rem;
 }
