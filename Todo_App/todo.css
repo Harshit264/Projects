@@ -1,12 +1,47 @@
-.top{
-    height: 50px;
-    background-color: aqua;
+:root{
+    --backcolor: #24252a;
 }
+
+*{
+    color: white;
+}
+
+button{
+    transition: all 0.3s ease 0s;
+}
+
+body{
+    background-color: var(--backcolor);
+}
+
 .Add{
     height: 30px;
     width: 30px;
     margin: 10px;
-    border: 2px black solid;
+    border: 2px aqua solid;
+    color: aqua;
+    background-color: var(--backcolor);
     border-radius: 100px 100px 100px 100px;
     font-size: large;
+}
+
+#date-todo{
+    color: aqua;
+    background-color: var(--backcolor);
+    border: 2px solid aqua;
+    height: 2rem;
+    width: 6rem;
+}
+
+#todo-title{
+    color: aqua;
+    background-color: var(--backcolor);
+    border: 2px solid aqua;
+    height: 2rem;
+    width: 6rem;
+}
+
+.Add:hover{
+    background-color: aqua;
+    color: var(--backcolor);
 }
