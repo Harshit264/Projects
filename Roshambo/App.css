@@ -1,19 +1,23 @@
+:root{
+    --backcolor: #24252a;
+}
+
 body{
     
-    background-color: rgb(2, 100, 2);
+    background-color: var(--backcolor);
     
     #startScreen{
         text-align: center;
         padding: 5em;
 
         #title{
-            color: goldenrod;
+            color: aqua;
             font-size: 72px;
             text-shadow: 0.1em 0.1em black;
         }
 
         #score{
-            color: goldenrod;
+            color: aqua;
             font-size: 36px;
             text-shadow: 0.1em 0.1em black;
         }
@@ -21,10 +25,17 @@ body{
         #startBtn{
             height: 2em;
             width: 4em;
-            background-color: goldenrod;
+            background-color: var(--backcolor);
+            border: 2px solid aqua;
             border-radius: 1em 1em 1em 1em;
             font-size: 36px;
-            color: white;
+            color: aqua;
+            transition: all 0.3s ease 0s;
+        }
+
+        #startBtn:hover{
+            background-color: aqua;
+            color: var(--backcolor);
         }
     }
     
@@ -33,10 +44,10 @@ body{
         display: none;
 
         #backBtn{
-            background-color: rgb(2, 100, 2);
+            background-color: var(--backcolor);
             border: 0;
             font-size: 36px;
-            color: goldenrod;
+            color: aqua;
             position: fixed;
             top: 5%;
             left: 5%;
@@ -44,14 +55,14 @@ body{
 
         #winner{
             text-align: center;
-            color: goldenrod;
+            color: aqua;
             font-size: 42px;
             text-shadow: 0.1em 0.1em black;
         }
 
         #gamescore{
             text-align: center;
-            color: goldenrod;
+            color: aqua;
             font-size: 36px;
             text-shadow: 0.1em 0.1em black;
         }
@@ -63,7 +74,7 @@ body{
             width: 40%;
 
             #info{
-                color: goldenrod;
+                color: aqua;
                 font-size: 42px;
                 text-shadow: 0.1em 0.1em black;
             }
@@ -71,29 +82,49 @@ body{
             #rock{
                 height: 3em;
                 width: 6em; 
-                background-color: goldenrod;
-                color: white;
+                background-color: var(--backcolor);
+                color: aqua;
                 font-size: 24px;
                 margin: 3%;
-                border-radius: 1em 1em 1em 1em;                   
+                border-radius: 1em 1em 1em 1em;
+                transition: all 0.3s ease 0s;                   
             }
+
+            #rock:hover{
+                background-color: aqua;
+                color: var(--backcolor);
+            }
+            
             #paper{
                 height: 3em;
                 width: 6em; 
-                background-color: goldenrod;
-                color: white;
+                background-color: var(--backcolor);
+                color: aqua;
                 font-size: 24px;
                 margin: 3%;
-                border-radius: 1em 1em 1em 1em;               
+                border-radius: 1em 1em 1em 1em;
+                transition: all 0.3s ease 0s;               
             }
+
+            #paper:hover{
+                background-color: aqua;
+                color: var(--backcolor);
+            }
+            
             #scissors{
                 height: 3em;
                 width: 6em; 
-                background-color: goldenrod;
-                color: white;
+                background-color: var(--backcolor);
+                color: aqua;
                 font-size: 24px;
                 margin: 3%;
-                border-radius: 1em 1em 1em 1em;               
+                border-radius: 1em 1em 1em 1em;
+                transition: all 0.3s ease 0s;               
+            }
+
+            #scissors:hover{
+                background-color: aqua;
+                color: var(--backcolor);
             }
         }
 
@@ -104,7 +135,7 @@ body{
             width: 30%;
             
             #move{
-                color: goldenrod;
+                color: aqua;
                 font-size: 42px;
                 text-shadow: 0.1em 0.1em black;
             }
