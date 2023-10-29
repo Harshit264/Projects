@@ -15,109 +15,6 @@ let playerChoice
 let computerChoice
 let playerScore = 0
 
-// Chooses and displays the move
-const moveFunc = () => {
-    
-    let num = Math.floor(Math.random()*3)
-
-    switch(num){
-        case 0:
-            computerChoice = "rock" 
-            move.textContent = "The Computer Choose: Rock"
-        break
-        case 1:
-            computerChoice =  "paper"
-            move.textContent = "The Computer Choose: Paper"
-        break
-        case 2:
-            computerChoice =  "scissors"
-            move.textContent = "The Computer Choose: Scissors"
-        break
-    }
-}
-
-const playerMove = () => {
-    
-    switch(playerChoice){
-        case 0:
-            playerChoice = "rock" 
-            info.textContent = "You Choose: Rock"
-        break
-        case 1:
-            playerChoice =  "paper"
-            info.textContent = "You Choose: Paper"
-        break
-        case 2:
-            playerChoice =  "scissors"
-            info.textContent = "You Choose: Scissors"
-        break
-    }
-} 
-//
-
-
-// The brain of the operation
-const computer = () => {
-
-    let compare = (playerChoice, computerChoice) => {
-        if(playerChoice === computerChoice) {
-        winnerDiv.textContent = "The result is a tie!"
-    }
-
-    if(playerChoice === "rock") {
-        if(computerChoice === "scissors") {
-            winnerDiv.textContent = "You won :)"
-            increaseScore()
-        } else {
-            winnerDiv.textContent = "You lost :("
-        }
-    }
-    if(playerChoice === "paper") {
-        if(computerChoice === "rock") {
-            winnerDiv.textContent = "You won :)"
-            increaseScore()
-        } else {
-            if(computerChoice === "scissors") {
-                winnerDiv.textContent = "You lost :("
-        }
-    }
-    if(playerChoice === "scissors") {
-        if(computerChoice === "rock") {
-            winnerDiv.textContent = "You lost :("
-        } else {
-            if(computerChoice === "paper") {
-                winnerDiv.textContent = "You won :)"
-                increaseScore()
-            }
-        }
-    }
-}
-}
-
-compare(playerChoice, computerChoice)
-playerChoice = ""
-computerChoice = ""
-
-}
-//
-
-// Controls
-const func = (element, value) => {
-    
-    element.addEventListener("click", () => {
-        playerChoice = value
-        playerMove()
-        moveFunc()
-        computer()
-    })
-        
-}
-
-func(rock, 0)
-func(paper, 1)
-func(scissors, 2)
-// 
-
 const increaseScore = () => {
     playerScore = playerScore + 1 
     score.textContent = "Score: " + playerScore
@@ -133,3 +30,116 @@ startBtn.addEventListener("click", () => {
     game.style.display = "block"
     startScreen.style.display = "none"
 })
+
+// Controls
+const func = (element, value) => {
+    
+    element.addEventListener("click", () => {
+        playerChoice = value
+        playerMove()
+        moveFunc()
+        computer()
+        console.log(playerChoice)
+    })
+        
+}
+
+func(rock, 0)
+func(paper, 1)
+func(scissors, 2)
+// 
+
+// Chooses and displays the move
+const moveFunc = () => {
+    
+    let num = Math.floor(Math.random()*3)
+
+    switch(num){
+        case 0:
+            computerChoice = 0 
+            move.textContent = "The Computer Choose: Rock"
+        break
+        case 1:
+            computerChoice = 1
+            move.textContent = "The Computer Choose: Paper"
+        break
+        case 2:
+            computerChoice = 2
+            move.textContent = "The Computer Choose: Scissors"
+        break
+    }
+
+    console.log(computerChoice)
+}
+
+const playerMove = () => {
+    
+    switch(playerChoice){
+        case 0: 
+            info.textContent = "You Choose: Rock"
+        break
+        case 1:
+            info.textContent = "You Choose: Paper"
+        break
+        case 2:
+            info.textContent = "You Choose: Scissors"
+        break
+    }
+} 
+//
+
+// The brain of the operation
+const computer = () => {
+    
+    if (playerChoice === 0){
+
+        switch(computerChoice){
+            case 0: 
+                winnerDiv.textContent = "Tie!"
+            break
+            case 1:
+                winnerDiv.textContent = "You lost :("
+            break
+            case 2: 
+                winnerDiv.textContent = "You Won :)"
+                increaseScore()
+            break
+        }
+
+    }
+
+    else if (playerChoice === 1){
+        
+        switch(computerChoice){
+            case 0: 
+                winnerDiv.textContent = "You Won :)"
+                increaseScore()
+            break
+            case 1:
+                winnerDiv.textContent = "Tie!"
+            break
+            case 2: 
+                winnerDiv.textContent = "You Lost :("
+            break
+        }
+
+    }
+
+    else if (playerChoice === 2){
+
+        switch(computerChoice){
+            case 0: 
+                winnerDiv.textContent = "You Lost :("
+            break
+            case 1:
+                winnerDiv.textContent = "You Won :)"
+                increaseScore()
+            break
+            case 2: 
+                winnerDiv.textContent = "Tie!"
+            break
+        }
+    
+    }
+}
+//
