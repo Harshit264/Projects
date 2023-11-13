@@ -1,6 +1,5 @@
 :root{
-    --backcolor: rgba( 14.12%, 14.51% , 16.47%, 1);
-    --lightbackcolor:  rgba( 14.12%, 14.51% , 16.47%, 0.5);
+    --backcolor: #121212;
 }
 
 *{
