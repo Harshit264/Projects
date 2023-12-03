@@ -12,5 +12,5 @@ If the file which which you are trying to run contains a `packages.json` file th
 npm i
 ```
 # Other Projects
-To check code for my Personal Portfolio click [Here]: https://github.com/Harshit264/PersonalPortfolio
+To check code for my Personal Portfolio click [Here](https://github.com/Harshit264/PersonalPortfolio)
 # Thanks for reading till the end :-)
