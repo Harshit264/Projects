@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root{
+    --backcolor: #121212;
+}
+
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    background-color: var(--backcolor);
+}
+
+main{
+    text-align: center;
+}
+
+h1{
+    margin: 2.5rem;
+    background-color: var(--backcolor);
+    color: white;
+    border-radius: 2rem;
+    transition: all 0.3s ease 0s;
+    font-size: 4rem;
+}
+
+.projects{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+    margin: 2rem;
+    max-width: 95%;
+}
+
+.box{
+    border: solid 2px white;
+    font-size: 1.5rem;
+    color: white;   
+    text-align: center;
+    transition: all 0.3s ease 0s;
+}
+
+.box:hover{
+    border: 0.5rem solid aqua;
+}
+
+.box h1{
+    font-size: 2rem;
+}
+
+.box p{
+    text-align: left;
+    padding: 1rem;
+}
+
+p{
+    color: white;
+    word-wrap: normal;
+    font-family: sans-serif;
+}
+
+.ex{
+    color: aqua;
+}
+
+.upbtn{
+    margin: 1.8rem;
+    padding: 0.5rem;
+    background-color: var(--backcolor);
+    color: white;
+    border: 2px solid aqua;
+    border-radius: 2rem;
+    width: 8rem;
+    transition: all 0.3s ease 0s;
+    font-size: 1.1rem;
+    transition: all 0.3s ease 0s;
+}
+
+.upbtn:hover{
+    background-color: aqua;
+    color: var(--backcolor);
+}
+
+.navclass{
+    margin-left: 1.8rem;
+    font-size: 2.5rem;
+    color: white; 
+}
+
+img{
+    border: 2px solid aqua;
+    margin: 1rem;
+}
+
+@media screen and (max-width: 425px){
+    .projects{
+        grid-gap: 1rem;
+        margin: 1rem;
+    }
+    img{
+        width: 15rem;
+        margin: 0.5rem;
+    }
+    h1{
+        font-size: 3rem;
+    }
+}

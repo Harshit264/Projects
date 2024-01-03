@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root{
+    --backcolor: #121212;
+}
+
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0.2rem;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    background-color: var(--backcolor);
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header{
+    display: inline-flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: solid 2px white;
+}
+
+button{
+    margin: 1.8rem;
+    padding: 0.5rem;
+    background-color: var(--backcolor);
+    color: white;
+    border: 2px solid aqua;
+    border-radius: 2rem;
+    width: 8rem;
+    transition: all 0.3s ease 0s;
+    font-size: 1.1rem;
+}
+
+button:hover{
+    background-color: aqua;
+    color: var(--backcolor);
+}
+
+.navbtn{
+    margin: 1.8rem;
+    background-color: var(--backcolor);
+    color: white;
+    border-radius: 2rem;
+    width: 8rem;
+    transition: all 0.3s ease 0s;
+    font-size: 1.1rem;
+}
+
+.navbtn:hover{
+    color: aqua; 
+}
+
+h1{
+    margin-bottom: 1.5rem;
+    background-color: var(--backcolor);
+    color: white;
+    border-radius: 2rem;
+    transition: all 0.3s ease 0s;
+    font-size: 4rem;
+}
+
+.hello{
+    font-size: 7rem;
+}
+
+p{
+    font-size: 2.5rem;
+    color: white;
+    word-wrap: wrap;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.btns{
+    margin-right: 3rem;
+}
+
+.namaste{
+    display: inline;
+    color: aqua;
+    font-size: 3rem;
+}
+
+.ex{
+    color: aqua;
+}
+
+section{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+}
+
+.intro{
+    margin-top: 4rem;
+}
+
+.certificates{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0.5rem;
+}
+
+img{
+    width: 100%;
+    margin: 0;
+    border-bottom: solid 1px white;
+}
+
+.box{
+    border: solid 2px white;
+    font-size: 1.5rem;
+    color: white;   
+    text-align: center;
+}
+
+.box a{
+    text-decoration: underline;
+    color: white;
+    transition: all 0.3s ease 0s;
+}
+
+.box a:hover{
+    color: aqua;
+}
+
+.boxData{
+    font-size: 1.3rem;
+}
+
+footer{
+    text-align: left;
+}
+
+@media screen and ( max-width: 500px ){
+
+    body{
+        text-align: left;
+    }
+
+    p{
+        font-size: 1.5rem;
+    }
+
+    .navbtn{
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+
+    h1{
+        font-size: 3rem;
+    }
+
+    .navbtn, .contact{
+        font-size: 0.7rem;
+        margin: 1rem;
+    }
+
+    .certificates{
+        grid-template-columns: 1fr;
+    }
+
+    .upbtn{
+        font-size: 0.7rem;
+        width: 7rem;
+    }
+
+}
+
+@media screen and ( max-width: 368px){
+    
+    .navbtn, .contact{
+        font-size: 0.7rem;
+        margin-right: 0.5rem;
+        margin-left: 0.5rem;
+    }
+
+    h1{
+        font-size: 3rem;
+    }
+
+}
