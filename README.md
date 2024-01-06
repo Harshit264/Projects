@@ -15,9 +15,6 @@ npm i
 ```
 This will download all the `dependencies` required to run the website. If you get an error regarding `npm` not existing on your computer then you won't be able to run all the features of the website. You can download node and npm using [this](https://nodejs.org/en) link. Click [here](https://www.geeksforgeeks.org/installation-of-node-js-on-windows/) to see the Documentation for the installation of node and npm. 
 
-# Other Projects
-To check the code for my Personal Portfolio click [here](https://github.com/Harshit264/PersonalPortfolio). New projects are being added and existing projects will be getting feature updates so stay tuned.
-
 ***
 Thanks for reading till the end :-)
 ***
