@@ -1,0 +1,43 @@
+:root{
+    --backcolor: rgba( 14.12%, 14.51% , 16.47%, 1);
+    --lightbackcolor:  rgba( 14.12%, 14.51% , 16.47%, 0.5);
+}
+
+*{
+    color: white;
+}
+
+body{
+    background-color: var(--backcolor);
+}
+
+#pokemonName{
+    width:  90%;
+    height: 3.4rem;
+    padding: 5px;
+    font-size: 2rem;
+    border: 2px solid aqua;
+    border-radius: 1rem;
+    background-color: #24252A;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+button{
+    margin: 10px;
+    padding: 5px;
+    font-size: 26px;
+    background-color: var(--backcolor);
+    transition: all 0.5s ease 0s;
+    border: 2PX solid aqua;
+}
+
+button:hover{
+    background-color: aqua;
+    color: var(--backcolor);
+}
+
+img{
+    height: 15rem;
+    width: 15rem;
+}
