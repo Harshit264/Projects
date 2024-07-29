@@ -1,0 +1,114 @@
+:root{
+    --backcolor: #212529;
+    --lightbackcolor:  rgba( 14.12%, 14.51% , 16.47%, 0.5);
+}
+
+*{
+    color: white !important;
+    background-color: var(--backcolor) !important;
+}
+
+.atmos, #inp, .search{
+    margin: 1rem;
+    padding: 0.48rem;
+}
+
+.atmos{
+    color: aqua !important;
+    margin-left: 1.8rem;
+}
+
+#inp{
+    width: 70%;
+    border-radius: 50px;
+    transition: all 0.2s ease-in 0.2s;
+}
+
+#inp:hover{
+    border: solid aqua 2px;
+}
+
+.search{
+    border-radius: 50px;
+    margin-right: 2rem;
+    width: 10%;
+    transition: all 0.45s ease-in 0.2s;
+}
+
+.search:hover{
+    font-weight: bold;
+    color: var(--backcolor) !important;
+    background-color: aqua !important;
+}
+
+#display{
+    font-size: 8rem;
+    margin-top: 3rem;
+    margin-left: 3rem;
+    margin-bottom: 0;
+}
+
+#tim{
+    margin-top: 0.2rem;
+    margin-left: 3rem;
+    font-size: 2rem;
+}
+
+#icon-main{
+    margin-right: 3rem;
+    margin-top: 5rem;
+    height: 100px;
+    width: 100px;
+}
+
+.m1{
+    grid-area: left;
+    margin-top: 1rem;
+}
+
+.m2{
+    grid-area: right;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.main{
+    display: grid;
+    grid-template: 
+    "left right"
+    ;
+}
+
+#temp, #feelslike, #weather, #humidity, #icon-main{
+    margin-top: 2rem;
+    margin-left: 3rem;
+    margin-bottom: 0;
+}
+
+#range-main{
+    margin-top: 2rem;
+    margin-left: 3rem;
+    margin-bottom: 0;
+    font-size: 1.6rem;
+}
+
+#feelslike{
+    margin-top: 1rem;
+}
+
+#latestWeather{
+    margin: 0.5rem;
+}
+
+#daily{
+    margin: 4rem;
+}
+
+.credit{
+    position: fixed;
+    bottom: 0.5rem;
+    left: 0.5rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    background: inherit;
+}
