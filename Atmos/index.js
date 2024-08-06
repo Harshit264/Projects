@@ -4,8 +4,6 @@ const temp = document.getElementById("temp")
 const rangeMain = document.getElementById("range-main")
 const feelLike = document.getElementById("feelslike")
 const humidity = document.getElementById("humidity")
-const weather = document.getElementById("weather")
-const iconMain = document.getElementById("icon-main")
 const latestWeather = document.getElementById("latestWeather")
 const daily = document.getElementById("daily")
 const err = document.getElementById("err")
@@ -36,9 +34,7 @@ async function getData() {
     try {
 
         display.textContent = `${data.city.name}`
-        iconMain.src = `http://openweathermap.org/img/w/${data.list[0].weather[0].icon}.png`
-        weather.textContent = `${data.list[0].weather[0].main} ( ${data.list[0].weather[0].description} )`
-        temp.textContent = `Temp: ${data.list[0].main.temp} °C`
+        temp.textContent = `${data.list[0].main.temp} °C`
         rangeMain.textContent = `${data.list[0].main.temp_min} °C - ${data.list[0].main.temp_max} °C`
         feelLike.textContent = `Feels like ${data.list[0].main.feels_like}°C`
         humidity.textContent = `Humidity: ${data.list[0].main.humidity}%`

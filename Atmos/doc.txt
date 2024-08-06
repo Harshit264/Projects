@@ -1,5 +1,3 @@
-This project does nto ahve a responsive layout yet. I am still learning and I *will* design it again in a better fashion. For now I just want to be done with this project and start learning again. 
-
-Thx for visiting my project and reading my message.
+Thx for visiting my project.
 
 Yours sincerely, Harshit
