@@ -1,0 +1,360 @@
+:root{
+    --hero: #454ADE;
+    --primary: #D2D7DF;
+    --secondary: #353535;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    background-color: var(--primary);
+    color: var(--secondary);
+    font-family: roboto, sans-serif;
+}
+
+/*Startup Screen*/
+
+.startup-screen{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.startup-screen img{
+    height: min(400px, 40vw);
+    width: min(400px, 40vw);
+    animation: fade 5s linear;
+}
+
+.startup-bar{
+    height: 10px;
+    width: 80%;
+    background-color: var(--secondary);
+    animation: fillbar 5s ease;
+}
+
+@keyframes fade {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+}
+
+@keyframes fillbar {
+    0% { width: 0; }
+    50% { width: 80%; }
+}
+
+/**/
+
+/* loading screen */
+
+.loading-screen{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.container0{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: min(1rem, 3vw);
+}
+
+.loading-screen h1{
+    color: var(--hero);
+    font-weight: bold;
+    text-align: center;
+}
+
+.loader{
+    height: 80px;
+    width: 80px;
+    border: 20px solid #f3f3f3;
+    border-bottom: 20px solid var(--hero);
+    border-radius: 50%;
+    animation: spin 2s ease infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+/**/
+
+/*permission-screen*/
+
+.permission{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.popup{
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    color: var(--secondary);
+    padding: 1rem;
+    margin: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.popup h2{
+    color: var(--hero);
+    padding: min(1rem, 3vw);
+}
+
+.popup p{
+    padding: min(1rem, 3vw);
+}
+
+.btn-box{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    gap: min(1rem, 3vw);
+    padding: min(1rem, 3vw);
+}
+
+.btn-box button{
+    color: var(--hero);
+    font-size: min(1rem, 3vw);
+    border-radius: 1000px;
+    border-color: var(--hero);
+}
+
+.btn-box button:hover{
+    background-color: var(--hero);
+    color: var(--primary);
+}
+
+/**/
+
+/*main-screen*/
+.app{
+    display: none;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: min(1rem, 3vw);    
+    height: 10vh;
+    overflow: hidden;
+}
+
+.logo{
+    height: min(90px, 40vw);
+    width: min(90px, 40vw);
+}
+
+.form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: min(1rem, 3vw);
+}
+
+.form input{
+    border-radius: 1000px;
+    border-color: var(--hero);
+    background-color: var(--primary);
+    color: var(--secondary);
+    padding: min(0.5rem, 2vw);
+    font-size: min(1rem, 3vw);
+}
+
+.form img{
+    border: #454ADE;
+    border-radius: 1000px;
+    cursor: pointer;
+}
+
+.parent-container{
+    padding: min(2rem, 6vw);
+    background: url("./svg/low-poly-grid-haikei.svg");
+}
+
+.glass{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: min(1rem, 3vw);
+    padding: min(1rem, 3vw);
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    border: 4px solid rgba(255, 255, 255, 0.3)
+}
+
+.container-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: min(1rem, 3vw);
+}
+
+.city-name{
+    color: var(--hero);
+    font-size: min(6rem, 7vw);
+    font-weight: bold;
+    text-align: center;
+    -webkit-text-stroke: 1px #D2D7DF;
+}
+
+.container-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sub-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.sub-container2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.temp{
+    font-size: min(6rem, 7vw);
+    font-weight: bold;
+    -webkit-text-stroke: 1px #D2D7DF;
+}
+
+.container-3{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: min(1rem, 3vw);
+    margin: min(1rem, 3vw);
+    margin-top: min(2rem, 6vw);
+    margin-bottom: min(2rem, 6vw);
+}
+
+.card{
+    border-radius: 1000px;
+    background-color: var(--primary);
+    padding: min(1rem, 3vw);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid #353535;
+}
+
+.card img{
+    height: min(90px, 10vw);
+    width: min(90px, 10vw);
+}
+
+.card h1{
+    font-size: min(3rem, 6vw);
+    font-weight: bold;
+    word-wrap: wrap;
+}
+
+.card p{
+    color: var(--hero);
+    font-size: min(1rem, 3vw);
+}
+
+/**/
+
+/*Forecast*/
+
+.forecast{
+    text-align: center;
+    background: url("./svg/circle-scatter-haikei.svg");
+    background-size: cover;    
+    padding: min(2rem, 6vw);
+}
+
+.sub-container-4{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: min(1rem, 3vw);
+}
+
+.forecast h1{
+    font-size: min(3rem, 6vw);
+    font-weight: bold;
+    word-wrap: wrap;
+    text-align: center;
+    margin: min(1rem, 3vw);
+    padding: min(1rem, 3vw);
+    -webkit-text-stroke: 1px #D2D7DF;
+}
+
+.forecast-card{
+    border-radius: 1000px;
+    padding: min(1rem, 3vw);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8px);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.forecast-card h2{
+    font-size: min(3rem, 6vw);
+    font-weight: bold;
+    word-wrap: wrap;
+    text-align: center;
+    color: var(--hero);
+    -webkit-text-stroke: 1px #D2D7DF;
+}
+
+.forecast-card p{
+    color: var(--primary);
+    font-size: min(1rem, 3vw);
+}
+
+/**/
+
+/*Credit*/
+
+.credit{
+    margin: min(1rem, 3vw);
+    text-align: right;
+    font-size: min(1rem, 3vw);
+    position: relative;
+    bottom: 0;
+    right: 0;
+    padding: min(1rem, 3vw);
+}
+
+/**/
